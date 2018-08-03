@@ -1,0 +1,5 @@
+.stack-work/
+movie-game.cabal
+*~
+.DS_Store
+
