@@ -1,18 +1,18 @@
 # Movie game
 
-# Build
+### Build
 
 ```
 stack build
 ```
 
-# Test
+### Test
 
 ```
 stack test
 ```
 
-# Install and Run
+### Install and Run
 
 ```
 [movie-game] stack install
@@ -27,7 +27,7 @@ I bet you can't tell me a movie I don't know in 3 tries!
 Name a movie:
 ```
 
-# Tests passing
+### Test
 
 ```
 stack test
