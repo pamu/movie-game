@@ -22,11 +22,11 @@ instance Show Movie where
     concat $
     intersperse
       "\n"
-      [ "\n"
+      [ ""
       , "Title: " ++ show title
       , "Plot: " ++ show plot
       , "Year: " ++ show year
-      , "\n"
+      , ""
       ]
 
 showMovies :: [Movie] -> String
