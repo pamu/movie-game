@@ -9,12 +9,12 @@ import Data.Aeson.Types
 import Data.List
 import Data.Text.Lazy hiding (concat, intersperse)
 
-type Year = Int
+type Year = Text
 
 data Movie = Movie
   { title :: !Text
   , plot :: !Text
-  , year :: !Year
+  , year :: !Text
   } deriving (Eq)
 
 instance Show Movie where
@@ -29,11 +29,13 @@ instance Show Movie where
       , ""
       ]
 
+showMinimal :: Movie -> String
+showMinimal (Movie title _ year) = show title ++ " from " ++ show year
+
 showMovies :: [Movie] -> String
-showMovies movies = concat $ intersperse "\n" $ fmap show movies
+showMovies movies = concat $ intersperse "\n" $ fmap showMinimal movies
 
 instance FromJSON Movie where
   parseJSON (Object o) =
-    Movie <$> o .: "Title" <*> o .: "Plot" <*>
-    (fmap (\x -> read x :: Int) (o .: "Year"))
+    Movie <$> o .: "Title" <*> o .: "Plot" <*> (o .: "Year")
   parseJSON _ = mzero

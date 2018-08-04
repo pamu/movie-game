@@ -33,7 +33,7 @@ Name a movie:
 stack test
 ```
 
-output:
+test output:
 
 ```
 Game
@@ -58,67 +58,46 @@ ExitSuccess
 ```
 
 
+### Program output
+
 ```bash
 I bet you can't tell me a movie I don't know in 3 tries!
 
 Name a movie:
-Jobs
+jobs
 
 I know it:
-
 
 Title: "Jobs"
 Plot: "The story of Steve Jobs' ascension from college dropout into one of the most revered creative entrepreneurs of the 20th century."
-Year: 2013
-
-
-
-Name a movie:
-Batman begins
-
-I know it:
-
-
-Title: "Batman Begins"
-Plot: "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from the corruption that Scarecrow and the League of Shadows have cast upon it."
-Year: 2005
-
+Year: "2013"
 
 
 Name a movie:
-avatar
+Avatar
 
 I know it:
-
 
 Title: "Avatar"
 Plot: "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."
-Year: 2009
+Year: "2009"
 
+
+Name a movie:
+Blood diamond
+
+I know it:
+
+Title: "Blood Diamond"
+Plot: "A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond."
+Year: "2006"
 
 ***************************
 I won
 ***************************
 
 The movies that I knew about:
-
-
-Title: "Batman Begins"
-Plot: "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from the corruption that Scarecrow and the League of Shadows have cast upon it."
-Year: 2005
-
-
-
-
-Title: "Avatar"
-Plot: "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."
-Year: 2009
-
-
-
-
-Title: "Jobs"
-Plot: "The story of Steve Jobs' ascension from college dropout into one of the most revered creative entrepreneurs of the 20th century."
-Year: 2013
-
+"Blood Diamond" from "2006"
+"Avatar" from "2009"
+"Jobs" from "2013"
 ```

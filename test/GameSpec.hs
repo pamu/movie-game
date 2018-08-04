@@ -32,7 +32,7 @@ simplePlayGame query title =
     (Identity query)
     (const $
      Identity $
-     MoviePayload Movie {title = title, plot = "Scala lang", year = 2018})
+     MoviePayload Movie {title = title, plot = "Scala lang", year = "2018"})
     (const $ Identity ())
     (Identity ())
 
