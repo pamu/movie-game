@@ -8,6 +8,9 @@ import Data.Aeson (FromJSON(..))
 import Data.Aeson.Types
 import Data.Text.Lazy
 
+{-|
+  API error when movie is not found
+-}
 data APIError = APIError
   { error :: !Text
   , response :: !Bool

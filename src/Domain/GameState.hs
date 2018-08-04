@@ -4,6 +4,9 @@ import Data.Text.Lazy
 import Domain.Movie
 import Domain.Winner
 
+{-|
+  Datastructure which carries game state
+-}
 data GameState = GameState
   { trials :: !Int
   , computerWinStreak :: !Int
